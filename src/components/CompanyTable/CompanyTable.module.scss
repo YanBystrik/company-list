@@ -1,0 +1,69 @@
+.root {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.tableContainer {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.companyTable {
+  width: 100%;
+  border-collapse: collapse;
+  height: max-content;
+}
+
+.tableHeader {
+  position: sticky;
+  top: 0;
+  background-color: #4caf50;
+  z-index: 1;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #b9b9b9;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.header {
+  border: 1px solid #dbdada;
+  padding: 8px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4caf50;
+  color: white;
+  white-space: nowrap;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 8px;
+}
+
+.tableBody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableBody tr:hover {
+  background-color: #f1f1f1;
+}

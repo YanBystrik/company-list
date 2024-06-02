@@ -1,0 +1,84 @@
+.root {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  z-index: 10;
+
+  border-top: 1px solid #dbdada;
+  background-color: #fff;
+
+  padding-bottom: 24px;
+}
+
+.deleteButton,
+.addButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #ff1a1a;
+}
+
+.deleteButton:active {
+  background-color: #e60000;
+}
+
+.addButton {
+  background-color: #4caf50;
+}
+
+.addButton:hover {
+  background-color: #4dbc51;
+}
+
+.addButton:active {
+  background-color: #55d159;
+}
+
+.addButtonEmployee {
+  background-color: #3f80c6;
+  margin-left: 205px;
+}
+
+.addButtonEmployee:hover {
+  background-color: #4288d3;
+}
+
+.addButtonEmployee:active {
+  background-color: #3182d8;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.disabled {
+  background: #c8c8c8;
+  cursor: pointer;
+}
+
+.disabled:hover {
+  background: #bfbfbf;
+}
+
+.buttons {
+  width: 100%;
+
+  display: flex;
+  gap: 8px;
+}

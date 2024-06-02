@@ -1,0 +1,79 @@
+.element {
+  border: 1px solid #dbdada;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.row:hover {
+  background-color: #ececec;
+}
+
+.checked {
+  background-color: #83d483 !important;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-80%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.element:hover .tooltip {
+  display: block;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-80%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.element.last .tooltip {
+  top: auto;
+  bottom: 100%;
+}
+
+.element.last .tooltip::after {
+  top: auto;
+  bottom: 0;
+  border-color: transparent transparent #333 transparent;
+}

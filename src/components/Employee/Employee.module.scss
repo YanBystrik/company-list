@@ -1,0 +1,27 @@
+.input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #e0f7fa;
+}
+
+.element {
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #dbdada;
+}
+
+.checked {
+  background-color: #8bbdf3;
+}

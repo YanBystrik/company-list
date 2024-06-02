@@ -1,0 +1,62 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tableContainer {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.employeeTable {
+  width: 100%;
+  height: max-content;
+  border-collapse: collapse;
+}
+
+.employeeTable th {
+  border: 1px solid #dbdada;
+  padding: 8px;
+}
+
+.employeeTable th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #3f80c6;
+  color: white;
+}
+
+.tableHeader {
+  position: sticky;
+  top: 0;
+  background-color: #4caf50;
+  z-index: 1;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #b9b9b9;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.checkboxContainer {
+  text-wrap: nowrap;
+}
+
+.checkbox {
+  margin-right: 8px;
+}
